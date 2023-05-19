@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020718;
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.front{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front h1{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 0.8rem;
+}
+
+.front p{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 0.8rem;
+  font-size: 30px;
+}
+
+.front hr{
+  width: 150px;
+}
+
+.back h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+.back p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.container:hover > .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url(https://avatars.githubusercontent.com/u/106751440?v=4);
+}
+
+.back {
+  background-color: #314154;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.instagram{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.linkedin{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+
+}
+
+.twitter{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.github{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.redes div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like{
+  border: 2px solid white;
+  background-color: none;
+  width: 150px;
+  height: 70px;
+}
